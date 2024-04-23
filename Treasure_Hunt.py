@@ -28,8 +28,6 @@ path = input ('Which one do you choose? Type "blue" or "yellow"\n')
 if path.upper() == "YELLOW":
     print ("You go down the road and find a river.")
     river = input ('Type "build" to build a boat. Type "swim" to swim across.\n')
-    if river.upper() == "SWIM":
-        print ("You start swimming but then get attacked by a sea monster. You died.")
     if river.upper() == "BUILD":
         print ("Yay you made it across the river! Now you approach 3 houses.")
         house = input('Type "1" for house 1, "2" for house 2, or "3" for house 3.\n')
@@ -39,8 +37,13 @@ if path.upper() == "YELLOW":
             print ("You walk inside the house and get hit by all the booby traps. You died.")
         elif house == "3":
             print ("You walk inside the house and get attacked by piranhas. You died.")
+        else:
+            print ("You chose a choice that doesn't exist. You died.")
+    elif river.upper() == "SWIM":
+        print ("You start swimming but then get attacked by a sea monster. You died.")
+    else:
+       print ("You chose a choice that doesn't exist. You died.")
 elif path.upper() == "BLUE":
     print ("Oh no you were attacked by a pack of wolves! You died.")
-
-
-
+else:
+    print ("You chose a choice that doesn't exist. You died.")
