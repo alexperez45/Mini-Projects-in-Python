@@ -18,9 +18,11 @@ true_total = nameTrue1 + nameTrue2 + nameTrue3 + nameTrue4
 love_total = nameLove1 + nameLove2 + nameLove3 + nameLove4
 total = int(str(true_total) + str(love_total))
 
-if total < 10 or total > 90:
+if total < 15:
   print (f"Your score is {total}, you go together like coke and mentos.")
-elif total < 50 and total > 40:
+elif total < 60 and total > 40:
   print (f"Your score is {total}, you are alright together.")
+elif total >= 85:
+  print (f"Your score is {total}, you go together like PB & J. <3")
 else:
   print (f"Your score is {total}.")
