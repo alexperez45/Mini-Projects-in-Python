@@ -32,24 +32,27 @@ images = [rock, paper, scissors]
 
 print ("Lets play rock, paper, scissors!")
 choice = int (input ("Type 0 for rock, 1 for paper, 2 for scissors: "))
-print (images[choice])
-print (images[number])
 
-if choice == 0 and number == 0:
-    print ("It's a tie!")
-elif choice == 0 and number == 1:
-    print ("You Lose!")
-elif choice == 0 and number == 2:
-    print ("You win!")
-elif choice == 1 and number == 0:
-    print ("You Win!")
-elif choice == 1 and number == 1:
-    print ("Its a tie!")
-elif choice == 1 and number == 2:
-    print ("You Lose!")
-elif choice == 2 and number == 0:
-    print ("You Lose!")
-elif choice == 2 and number == 1:
-    print ("You Win!")
-elif choice == 2 and number == 2:
-    print ("Its a tie!")
+if choice <=2:
+    print (images[choice])
+    print (images[number])
+    if choice == 0 and number == 0:
+        print ("It's a tie!")
+    elif choice == 0 and number == 1:
+        print ("You Lose!")
+    elif choice == 0 and number == 2:
+        print ("You win!")
+    elif choice == 1 and number == 0:
+        print ("You Win!")
+    elif choice == 1 and number == 1:
+        print ("Its a tie!")
+    elif choice == 1 and number == 2:
+        print ("You Lose!")
+    elif choice == 2 and number == 0:
+        print ("You Lose!")
+    elif choice == 2 and number == 1:
+        print ("You Win!")
+    elif choice == 2 and number == 2:
+        print ("Its a tie!")
+else:
+    print ("You did not enter a correct value. You Lose!")
