@@ -27,44 +27,29 @@ scissors = '''
 ---.__(___)
 '''
 
-number = random.randint(1,3)
+number = random.randint(0,2)
+images = [rock, paper, scissors]
 
 print ("Lets play rock, paper, scissors!")
-choice = input ("Type 1 for rock, 2 for paper, 3 for scissors: ")
+choice = int (input ("Type 0 for rock, 1 for paper, 2 for scissors: "))
+print (images[choice])
+print (images[number])
 
-if choice == "1" and number == 1:
-    print (rock)
+if choice == 0 and number == 0:
     print ("It's a tie!")
-    print (rock)
-elif choice == "1" and number == 2:
-    print (rock)
+elif choice == 0 and number == 1:
     print ("You Lose!")
-    print (paper)
-elif choice == "1" and number == 3:
-    print (rock)
+elif choice == 0 and number == 2:
     print ("You win!")
-    print (scissors)
-elif choice == "2" and number == 1:
-    print (paper)
+elif choice == 1 and number == 0:
     print ("You Win!")
-    print (rock)
-elif choice == "2" and number == 2:
-    print (paper)
+elif choice == 1 and number == 1:
     print ("Its a tie!")
-    print (paper)
-elif choice == "2" and number == 3:
-    print (paper)
+elif choice == 1 and number == 2:
     print ("You Lose!")
-    print (scissors)
-elif choice == "3" and number == 1:
-    print (scissors)
+elif choice == 2 and number == 0:
     print ("You Lose!")
-    print (rock)
-elif choice == "3" and number == 2:
-    print (scissors)
+elif choice == 2 and number == 1:
     print ("You Win!")
-    print (paper)
-elif choice == "3" and number == 3:
-    print (scissors)
+elif choice == 2 and number == 2:
     print ("Its a tie!")
-    print (scissors)
