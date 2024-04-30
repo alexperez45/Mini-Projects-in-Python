@@ -5,11 +5,11 @@ extra_cheese = input("Do you want extra cheese? Y or N: ")
 bill = 0
 
 if size.upper() == 'S':
-    bill += 15
+    bill += 12
 elif size.upper() == 'M':
-    bill += 20
+    bill += 16
 elif size.upper() == 'L':
-    bill += 25
+    bill += 20
 
 if add_pepperoni.upper() == 'Y' and size == 'S':
     bill += 2
