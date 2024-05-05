@@ -6,11 +6,11 @@ print("Hiding your treasure! X marks the spot.")
 position = input()
 letter = (position[0])
 
-if letter == "A":
+if letter.upper() == "A":
   letter = 0
-elif letter == "B":
+elif letter.upper() == "B":
   letter = 1
-elif letter == "C":
+elif letter.upper() == "C":
   letter = 2
   
 number = int(position[1]) -1
