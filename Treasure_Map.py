@@ -3,7 +3,7 @@ line2 = ["⬜️","⬜️","️⬜️"]
 line3 = ["⬜️️","⬜️️","⬜️️"]
 map = [line1, line2, line3]
 print("Hiding your treasure! X marks the spot.")
-position = input()
+position = input("Type a letter in between A-C and a number between 1-3: ")
 letter = (position[0])
 
 if letter.upper() == "A":
