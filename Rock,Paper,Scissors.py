@@ -34,7 +34,9 @@ print ("Lets play rock, paper, scissors!")
 choice = int (input ("Type 0 for rock, 1 for paper, 2 for scissors: "))
 
 if choice <=2:
+    print ("Your choice:")
     print (images[choice])
+    print ("Opponent's choice:")
     print (images[number])
     if choice == number:
         print ("It's a tie!")
